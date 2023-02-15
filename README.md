@@ -1,4 +1,5 @@
 # BC4Ubuntu
+![htop](https://user-images.githubusercontent.com/3491765/219025165-7099dc7e-fac7-4f83-a6d4-f83e67472161.png)
 Repo for my project of getting Microsoft Business Central running on Ubuntu.
 
 Current status: 
@@ -16,3 +17,5 @@ Current status:
 - Wine 8.0 Stable and 8.1 Staging
 - MSSQL on a Windows machine with SQL auth active
 - Cronus DB (with SQL encryption key already added)
+
+
