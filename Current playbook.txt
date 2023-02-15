@@ -1,0 +1,46 @@
+Current playbook, might be missing steps for a 1-to-1 replication as this is just my notes. I know there are things I am missing, as I just do them as I go along. I will update this as I remember things.
+
+Ubuntu VM:
+sudo apt update && sudo apt upgrade
+sudo apt install winbind p7zip-full net-tools linux-azure slim cabextract
+sudo apt install ubuntu-desktop
+
+HyperV host (Enable enhanced session):
+Set-VM -VMName bc4ububtu -EnhancedSessionTransportType HvSocket
+
+Ubuntu VM:
+(Enable enhanced session)
+wget https://raw.githubusercontent.com/Hinara/linux-vm-tools/ubuntu20-04/ubuntu/22.04/install.sh
+sudo chmod +x install.sh
+sudo ./install.sh
+sudo reboot
+(Wine part)
+sudo dpkg --add-architecture i386
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/bionic/winehq-bionic.sources
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+sudo apt install --install-recommends wine-staging
+
+Install Winetricks from repo https://github.com/Winetricks/winetricks
+
+(Create bc wineprefix, install the follow in *this* order)
+dotnet48
+dotnetdesktop60
+
+Install ps51 from https://github.com/PietJankbal/Chocolatey-for-wine
+
+Install ASPNetCore
+Install NST from Uninstaller
+Copy over Config file and key
+
+Restart VM
+
+
+Notes:
+Often used cmds
+WINEDEBUG=+eventlog WINEPREFIX=~/.local/share/wineprefixes/bc1 wine powershell
+WINEPREFIX=~/.local/share/wineprefixes/bc1 wine powershell
+WINEPREFIX=~/.local/share/wineprefixes/bc1 /opt/wine-staging/bin/wine powershell
+WINEPREFIX=~/.local/share/wineprefixes/bc1 /opt/wine-staging/bin/wine cmd
