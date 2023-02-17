@@ -39,8 +39,9 @@ dotnetdesktop60
 
 Install ps51 from https://github.com/PietJankbal/Chocolatey-for-wine
 
-Install ASPNetCore
-Install NST from Uninstaller
+In Wine Uninstaller:
+Install aspnetcore-runtime-6.0.13-win-x64.exe or dotnet-hosting-6.0.14-win.exe
+Install NST
 Copy over Config file and key
 
 Restart VM
