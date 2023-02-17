@@ -1,5 +1,9 @@
 Current playbook, might be missing steps for a 1-to-1 replication as this is just my notes. I know there are things I am missing, as I just do them as I go along. I will update this as I remember things.
 
+wget INSERT SCRIPT PACKAGE HERE
+sudo chmod +x install.sh
+sudo ./install.sh
+
 Ubuntu VM:
 sudo apt update && sudo apt upgrade
 sudo apt install winbind p7zip-full net-tools linux-azure slim cabextract
@@ -22,6 +26,10 @@ sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/
 sudo apt update
 sudo apt install --install-recommends winehq-stable
 sudo apt install --install-recommends wine-staging
+
+wget INSERT SCRIPT PACKAGE HERE
+sudo chmod +x install.sh
+sudo ./install.sh
 
 Install Winetricks from repo https://github.com/Winetricks/winetricks
 
