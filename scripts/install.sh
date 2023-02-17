@@ -15,3 +15,8 @@ sudo apt install --install-recommends wine-staging
 
 ./install-winetricks.sh
 update_winetricks
+
+winetricks prefix=BC1 -q dotnet48
+winetricks prefix=BC1 -q dotnetdesktop60
+
+wget https://github.com/PietJankbal/Chocolatey-for-wine/releases/download/v0.5q.703/Chocolatey-for-wine.7z
