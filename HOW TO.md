@@ -8,9 +8,10 @@ Set-VM -VMName <your_vm_name> -EnhancedSessionTransportType HvSocket
 3. Modify the settings in the script to match your environment
 4. Run the script
 5. Switch to the Ubuntu VM 
-6. Download the **run-first-on-ubuntu.sh** script and run it. The script will install the required packages and download the required files. Just accept the defaults when prompted.
+6. Download the **run-first-on-ubuntu.sh** script, modify the settings in the script to match your environment and run it. The script will install the required packages and download the required files. Just accept the defaults when prompted.
 ```bash
 wget https://raw.githubusercontent.com/SShadowS/BC4Ubuntu/main/scripts//run-first-on-ubuntu.sh
+nano run-first-on-ubuntu.sh
 sudo bash run-first-on-ubuntu.sh
 ```
 7. A reboot of the VM is required.
