@@ -26,3 +26,11 @@ wine powershell
 WINEPREFIX=~/.local/share/wineprefixes/bc1 wine uninstaller
 ```
 - Press **Install...** and then select the Asp Core and Service Tier installers. The installers are located in the folder where you downloaded the run-first-on-ubuntu.sh script. The installers are named "dotnet-hosting-6.0.14-win.exe" and "Microsoft Dynamics 365 Business Central Server.msi". The order is important. The Asp Core must be installed first.
+11. Copy the CustomSettings.config file to the Service Tier folder
+```bash
+cp ~/CustomSettings.config ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/220/Service/
+```
+12. Start the Service Tier
+```bash
+WINEPREFIX=~/.local/share/wineprefixes/bc1 /opt/wine-staging/bin/wine cmd
+```

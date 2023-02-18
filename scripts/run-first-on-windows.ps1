@@ -29,6 +29,7 @@ Invoke-scriptInBcContainer $containerName -scriptBlock {
     Import-NAVEncryptionKey -KeyPath c:\run\secret.key -ServerInstance BC -ApplicationDatabaseServer localhost -ApplicationDatabaseCredentials $credential -ApplicationDatabaseName CRONUS -Force
 }
 Copy-FileFromBcContainer -containerName $container -localPath $encryptionkey -containerPath c:\run\secret.key
+Copy-FileFromBcContainer -containerName $container -localPath $customsettings -containerPath "C:\Program Files\Microsoft Dynamics NAV\220\Service\CustomSettings.config"
 
 # Start webserver to serve the encryption key
 wget https://github.com/cesanta/binary/releases/download/exe/mongoose.exe -OutFile mongoose.exe
