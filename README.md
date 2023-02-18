@@ -12,10 +12,9 @@ Current status:
 - [ ] When done with above, give a beer to all contributors at BCTechDays
 
 ## Requirements:
-- Business Central Insider (BC22)
-- Ubuntu Server 22.04 Lts
-- Wine 8.0 Stable and 8.1 Staging
-- MSSQL on a Windows machine with SQL auth active
-- Cronus DB (with SQL encryption key already added)
+- Business Central Insider Access
+- Ubuntu Server 22.04 Lts VM
 
+## How to install
+[Guide here](../main/HOW%20TO.md)
 
