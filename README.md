@@ -16,5 +16,6 @@ Current status:
 - Ubuntu Server 22.04 Lts VM
 
 ## How to install
-[Guide here](../main/HOW%20TO.md)
+Note: This is a work in progress. The following steps are not complete and will change. The following steps are for testing purposes only. Do not use this in production.
 
+[Guide here](../main/HOW%20TO.md)
