@@ -6,6 +6,7 @@ $sastoken = '?sv=....'
 $workfolder = 'c:\bc4ubuntu'
 $container = 'bc4ubuntu'
 $encryptionkey = "$($workfolder)\secret.key"
+$customsettings = "$($workfolder)\CustomSettings.config"
 
 #Some might need to run this first
 #Install-Module PowershellGet -Force
