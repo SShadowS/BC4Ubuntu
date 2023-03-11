@@ -23,7 +23,7 @@ $artifactfolders = Download-Artifacts -includePlatform $ArtifactInsider
 Compress-Archive -Path "$($artifactfolders[1])\ServiceTier" -DestinationPath ServiceTier.zip
 New-BcContainer -Credential $credential -accept_eula -accept_outdated -assignPremiumPlan -auth NavUserPassword -containerName $container -isolation process -licenseFile $license -shortcuts DesktopFolder -updateHosts -useBestContainerOS -artifactUrl $ArtifactInsider
 
-Invoke-scriptInBcContainer $containerName -scriptBlock {
+Invoke-scriptInBcContainer $container -scriptBlock {
     $password = ConvertTo-SecureString '1234' -AsPlainText -Force
     $credential = New-Object System.Management.Automation.PSCredential ('bc', $password)
     New-NAVEncryptionKey -KeyPath c:\run\secret.key
