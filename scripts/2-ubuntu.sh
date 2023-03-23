@@ -14,7 +14,7 @@ wget "$webserver_url/CustomSettings.config"
 wget https://download.visualstudio.microsoft.com/download/pr/321a2352-a7aa-492a-bd0d-491a963de7cc/6d17be7b07b8bc22db898db0ff37a5cc/dotnet-hosting-6.0.14-win.exe
 wget https://raw.githubusercontent.com/SShadowS/BC4Ubuntu/main/scripts/install-winetricks.sh
 
-7z e ServiceTier.zip
+7z x ServiceTier.zip
 
 chmod +x install-winetricks.sh
 ./install-winetricks.sh
