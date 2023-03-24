@@ -13,6 +13,7 @@ wget "$webserver_url/ServiceTier.zip"
 wget "$webserver_url/CustomSettings.config"
 wget https://download.visualstudio.microsoft.com/download/pr/321a2352-a7aa-492a-bd0d-491a963de7cc/6d17be7b07b8bc22db898db0ff37a5cc/dotnet-hosting-6.0.14-win.exe
 wget https://raw.githubusercontent.com/SShadowS/BC4Ubuntu/main/scripts/install-winetricks.sh
+wget https://github.com/PietJankbal/Chocolatey-for-wine/releases/download/v0.5q.703/Chocolatey-for-wine.7z
 
 7z x ServiceTier.zip
 
@@ -20,13 +21,4 @@ chmod +x install-winetricks.sh
 ./install-winetricks.sh
 update_winetricks
 
-winetricks prefix=bc1 -q dotnet48
-winetricks prefix=bc1 -q dotnetdesktop60
-
-wget https://github.com/PietJankbal/Chocolatey-for-wine/releases/download/v0.5q.703/Chocolatey-for-wine.7z
-7z e Chocolatey-for-wine.7z
-cd Chocolatey-for-wine
-WINEPREFIX=~/.local/share/wineprefixes/bc1 wine ChoCinstaller_0.5g.703.exe
 sudo reboot
-
-cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/220/Service/Secret.key

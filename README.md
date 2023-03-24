@@ -5,6 +5,7 @@ Repo for my project of getting Microsoft Business Central running on Ubuntu.
 Current status: 
 - [x] Run NST on Ubuntu via Wine
 - [x] Connect NST to SQL
+- [x] Run code on NST
 - [ ] Dev endpoint
 - [ ] SOAP and Odata endpoints
 - [ ] Client Services endpoint
@@ -12,8 +13,13 @@ Current status:
 - [ ] When done with above, give a beer to all contributors at BCTechDays
 
 ## Requirements:
-- Business Central Insider Access
-- Ubuntu Server 22.04 Lts VM
+The versions are what I have tested with. Other versions might work as well.
+Dev machine with:
+- Ubuntu Server 22.04 LTS VM
+- Docker container with Business Central BC22 or never
+- Local SQL Server
+- Time to spare
+- High tolerance for frustration
 
 ## How to install
 Note: This is a work in progress. The following steps are not complete and will change. The following steps are for testing purposes only. Do not use this in production.
