@@ -1,3 +1,4 @@
+
 # BC4Ubuntu
 ![htop](https://user-images.githubusercontent.com/3491765/219025165-7099dc7e-fac7-4f83-a6d4-f83e67472161.png)
 Repo for my project of getting Microsoft Business Central running on Ubuntu.
@@ -28,9 +29,10 @@ Repo for my project of getting Microsoft Business Central running on Ubuntu.
 - Taskscheduler
 	* Works
 
-## Known bugs
-The NST is bad at dropping Http connections on errors. Need to work a bit more on HttpCancelHttpRequest() in HttpApi
-Downloading of symbols fails.
+## Known bugs/limitations
+- The NST is bad at dropping Http connections on errors. Need to work a bit more on HttpCancelHttpRequest() in HttpApi
+- Downloading of symbols fails.
+- No SSL (HTTPS), skipping CertStore until I relly need it.
 
 ## Requirements:
 The versions are what I have tested with. Other versions might work as well.
