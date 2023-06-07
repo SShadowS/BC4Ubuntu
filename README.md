@@ -28,6 +28,10 @@ Repo for my project of getting Microsoft Business Central running on Ubuntu.
 - Taskscheduler
 	* Works
 
+## Known bugs
+The NST is bad at dropping Http connections on errors. Need to work a bit more on HttpCancelHttpRequest() in HttpApi
+Downloading of symbols fails.
+
 ## Requirements:
 The versions are what I have tested with. Other versions might work as well.
 Dev machine with:
