@@ -38,7 +38,7 @@ Repo for my project of getting Microsoft Business Central running on Ubuntu.
 The versions are what I have tested with. Other versions might work as well.
 Dev machine with:
 - Ubuntu Server 22.04 LTS VM
-- Custom Wine64 build from my repo
+- Custom Wine64 build from my repo https://github.com/SShadowS/wine64-bc4ubuntu
 - Docker container with Business Central BC22 or never
 - Local SQL Server
 - Time to spare
