@@ -2,20 +2,37 @@
 ![htop](https://user-images.githubusercontent.com/3491765/219025165-7099dc7e-fac7-4f83-a6d4-f83e67472161.png)
 Repo for my project of getting Microsoft Business Central running on Ubuntu.
 
-Current status: 
+## Current tasklist: 
 - [x] Run NST on Ubuntu via Wine
 - [x] Connect NST to SQL
 - [x] Run code on NST
-- [ ] Dev endpoint
-- [ ] SOAP and Odata endpoints
-- [ ] Client Services endpoint
+- [ ] Management endpoint
+- [X] Dev endpoint
+- [X] SOAP and Odata endpoints
+- [X] Client Services endpoint
 - [ ] Use IIS on Windows machine for Webclient
 - [ ] When done with above, give a beer to all contributors at BCTechDays
+
+## Status:
+- Management endpoint
+	* Crashes the Wine server, do not enable.
+- SOAP endpoint
+	* Not fully tested, replies to simple requests
+- ODATA endpoint
+	* Not fully tested, replies to simple requests
+- Client Services endpoint
+	* Not fully tested, replies to simple requests
+- Developer Endpoint
+	* Can publish Apps
+	* Currently a bug with downloading symbols, think I got a fix
+- Taskscheduler
+	* Works
 
 ## Requirements:
 The versions are what I have tested with. Other versions might work as well.
 Dev machine with:
 - Ubuntu Server 22.04 LTS VM
+- Custom Wine64 build from my repo
 - Docker container with Business Central BC22 or never
 - Local SQL Server
 - Time to spare
