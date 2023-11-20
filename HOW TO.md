@@ -27,15 +27,15 @@ sudo ./install.sh
 
 ```bash
 winetricks prefix=bc1 -q dotnet48
-winetricks prefix=bc1 -q dotnetdesktop60
+winetricks prefix=bc1 -q dotnetdesktop6
 
 7z e Chocolatey-for-wine.7z
 cd Chocolatey-for-wine
-WINEPREFIX=~/.local/share/wineprefixes/bc1 wine ChoCinstaller_0.5g.703.exe
+WINEPREFIX=~/.local/share/wineprefixes/bc1 wine ChoCinstaller_0.5q.703.exe
 
-cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/220/Service/Secret.key
-cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/ProgramData/Microsoft/Microsoft\ Dynamics\ NAV/220/Server/Keys/bc.key
-cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/ProgramData/Microsoft/Microsoft\ Dynamics\ NAV/220/Server/Keys/BusinessCentral220.key
+cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/230/Service/Secret.key
+cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/ProgramData/Microsoft/Microsoft\ Dynamics\ NAV/230/Server/Keys/bc.key
+cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/ProgramData/Microsoft/Microsoft\ Dynamics\ NAV/230/Server/Keys/BusinessCentral220.key
 
 ```
 
@@ -43,7 +43,7 @@ cp secret.key  ~/.local/share/wineprefixes/bc1/drive_c/ProgramData/Microsoft/Mic
 ```bash
 WINEPREFIX=~/.local/share/wineprefixes/bc1 wine powershell
 ```
- - Type **ps51** in the powershell core prompt and press enter.
+ - Type **winetricks ps51** in the powershell core prompt and press enter.
   
 13.   Exit the powershell core prompt
 14.    Install Asp Core and the Service Tier
@@ -66,7 +66,7 @@ WINEPREFIX=~/.local/share/wineprefixes/bc1 wine uninstaller
 ```
 16.    Copy the CustomSettings.config file to the Service Tier folder
 ```bash
-cp ~/CustomSettings.config ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/220/Service/
+cp ~/CustomSettings.config ~/.local/share/wineprefixes/bc1/drive_c/Program\ Files/Microsoft\ Dynamics\ NAV/230/Service/
 ```
 
 17.    Start the Service Tier
